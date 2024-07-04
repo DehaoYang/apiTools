@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/icon" href="/src/assets/favicon.ico"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title id="title"></title>
+</head>
+
+<body>
+<div id="app"></div>
+<%if(mode=="development"){%>
+<script type="module">
+    // import configData from '/src/mock/initData.json';
+    import configData from '/src/mock/test3.json';
+
+    window.init = configData
+    document.getElementById('title').innerText=configData.title
+</script>
+<%}%>
+<script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

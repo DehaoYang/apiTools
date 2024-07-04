@@ -1,0 +1,3726 @@
+{
+  "scheme": "http",
+  "apis": [
+    {
+      "name": "测试模块",
+      "uri": "/test",
+      "order": 1,
+      "methodList": [
+        {
+          "name": "合作方报告提交",
+          "desc": "",
+          "uri": "/submitPartnerMsg",
+          "order": 5,
+          "needLogin": true,
+          "paramType": "BODY",
+          "type": "Object",
+          "mappingType": "POST",
+          "afterJs": null,
+          "paramList": [
+            {
+              "name": "农贷--合作方详细信息",
+              "order": 2147483647,
+              "type": "Object",
+              "keyName": "agriculturalPartnerDetailedBo",
+              "defaultValue": "",
+              "required": false,
+              "paramList": [
+                {
+                  "name": "合作方基础信息",
+                  "order": 2147483647,
+                  "type": "Object",
+                  "keyName": "baseBo",
+                  "defaultValue": "",
+                  "required": false,
+                  "paramList": [
+                    {
+                      "name": "业务模式（项目类型）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "bizType",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "合作方项目编号",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "partnerNo",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "申请金额（万元）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "limitAmount",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": 0,
+                      "lengthMax": 9
+                    },
+                    {
+                      "name": "申请期限（月）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "loanLength",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": 0,
+                      "lengthMax": 3
+                    },
+                    {
+                      "name": "贷款用途 733-经营 734-消费",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "useType",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "客户经理姓名（主调查人）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "userName",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "辅调查人",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "auxiliaryInvestigator",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "调查日期",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "investigateDate",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "客户姓名",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "cusName",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "证件号码",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "certificateCode",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "年龄",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "age",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "性别 (1 : 男 ， 0 : 女)",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "sex",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "客户手机号码",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "cusMobile",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "户籍",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "domicile",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "常驻地址、居住地址",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "address",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "教育程度（客户学历）1：未知2；小学3:初中4：高中5：专科6：本科7：硕士8：博士",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "educate",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "家庭劳动力人数",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "laborForce",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "婚姻状况: 10未婚 20已婚 30离异 40丧偶",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "marrgSituCode",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "配偶姓名",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "spouseName",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "配偶身份证号码",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "spouseCertificateCode",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "配偶移动电话",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "spouseMobile",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "配偶户籍",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "mateDomicile",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "配偶工作单位",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "mateWorkUnit",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "配偶职务",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "mateDuties",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "家庭情况介绍",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "familySituation",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    }
+                  ]
+                },
+                {
+                  "name": "合作方经营信息",
+                  "order": 2147483647,
+                  "type": "Object",
+                  "keyName": "manageBo",
+                  "defaultValue": "",
+                  "required": false,
+                  "paramList": [
+                    {
+                      "name": "生产经营项目",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "item",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "经营年限（年）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "life",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "主营业务经营地址",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "address",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "经营面积（平方米）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "area",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "是否有种养殖项目:1是；0否",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "isBreed",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "土地性质:1自有 2租凭 3其他",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "landStatus",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "土地性质:其他说明",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "otherLandDesc",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "其他情况",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "otherConditions",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "租金交付方式:1目前拖欠租金 2一季一交 3一年一交 4一次性交付1-3年租金 5一次性交付3-5年租金 6一次性交付5-10年租金 7一次性交付10年以上租金",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "deliveryType",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "是否有营业执照:1是；0否",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "isCharter",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "经营类型:1种植；2养殖；3非种养殖（可多选）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "managementType",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "种植信息",
+                      "order": 2147483647,
+                      "type": "Object",
+                      "keyName": "plantInfo",
+                      "defaultValue": "",
+                      "required": false,
+                      "paramList": [
+                        {
+                          "name": "种植物简称",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "abbreviation",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "种植历史（年）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "history",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "种植规模计量单位",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "scaleCalculate",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "单位产量计量单位",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "yieldCalculate",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "上年度种植规模",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "scaleLast",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "本年度种植规模",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "scale",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "上年度单位产量",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "specificYieldLast",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "本年度单位产量",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "specificYield",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "上年度单位产量价格",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "specificYieldPriceLast",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "本年度单位产量价格",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "specificYieldPrice",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "上年度种植收入（元）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "incomeLast",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "本年度种植收入（元）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "income",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "自有土地规模（亩）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "freeLandScale",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "年均租赁土地成本（元）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "yearCost",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "种植周期（月）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "cycle",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "每周期投入成本（元）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "cycleCost",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "每周期营业收入（元）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "cycleIncome",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "每周期净收入（元）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "cycleNetIncome",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        }
+                      ]
+                    },
+                    {
+                      "name": "养殖信息",
+                      "order": 2147483647,
+                      "type": "Object",
+                      "keyName": "breedInfo",
+                      "defaultValue": "",
+                      "required": false,
+                      "paramList": [
+                        {
+                          "name": "养殖物简称",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "abbreviation",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "养殖历史（年）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "history",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "养殖规模计量单位",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "scaleCalculate",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "上年度养殖规模",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "scaleLast",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "本年度养殖规模",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "scale",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "上年度单位收入",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "unitRevenuesLast",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "本年度单位收入",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "unitRevenues",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "上年度养殖收入（元）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "incomeLast",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "自有土地规模（亩）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "freeLandScale",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "年均租赁土地成本（元）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "yearCost",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "本年度种植收入（元）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "income",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "本年度种植收入（元）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "landScale",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "本年度种植收入（元）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "landCost",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "养殖周期（月）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "cycle",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "每周期投入成本（元）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "cycleCost",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "每周期营业收入（元）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "cycleIncome",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "每周期净收入（元）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "cycleNetIncome",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        }
+                      ]
+                    },
+                    {
+                      "name": "非种养殖经营信息",
+                      "order": 2147483647,
+                      "type": "Object",
+                      "keyName": "otherMultiplyInfo",
+                      "defaultValue": "",
+                      "required": false,
+                      "paramList": [
+                        {
+                          "name": "经营项目",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "item",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "店名/厂名",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "shopOrFactory",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "行业类别",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "sectors",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "行业调整系数（%）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "adjustmentCoefficient",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "经营地址",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "address",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "经营场地面积（平方米）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "area",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "经营场地性质:1自有 2租凭 3其他",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "landStatus",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "租金交付方式: 1目前拖欠租金 2一季一交 3一年一交 4一次性交付1-3年租金 5一次性交付3-5年租金 6一次性交付5-10年租金 7一次性交付10年以上租金",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "deliveryType",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "雇员人数",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "employees",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "是否存在淡旺季:1是；0否",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "isSlackPeakSeason",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "旺季月数",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "peakMos",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "旺季月均收入（元）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "peakMonthlyIncome",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "旺季月均成本（元）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "peakMonthlyCost",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "平季月数",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "regularMos",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "平季月均收入（元）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "regularMonthlyIncome",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "平季月均成本（元）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "regularMonthlyCost",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "淡季月数",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "slackMos",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "淡季月均收入（元）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "slackMonthlyIncome",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "淡季月均成本（元）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "slackMonthlyCost",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "全年月均收入（元）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "yearlyMonthlyIncome",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "全年月均成本（元）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "yearlyMonthlyCost",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "现金流账户类型：1个人 2企业",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "accountType",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "开户银行",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "depositBank",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        }
+                      ]
+                    },
+                    {
+                      "name": "12月现金流",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "monthlyCashList",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": "Object",
+                        "paramList": [
+                          {
+                            "name": "月份",
+                            "order": 2147483647,
+                            "type": "String",
+                            "keyName": "month",
+                            "defaultValue": "",
+                            "required": false,
+                            "lengthMin": null,
+                            "lengthMax": null
+                          },
+                          {
+                            "name": "现金流入量（元）",
+                            "order": 2147483647,
+                            "type": "String",
+                            "keyName": "inflow",
+                            "defaultValue": "",
+                            "required": false,
+                            "lengthMin": null,
+                            "lengthMax": null
+                          },
+                          {
+                            "name": "现金流出量（元）",
+                            "order": 2147483647,
+                            "type": "String",
+                            "keyName": "outflow",
+                            "defaultValue": "",
+                            "required": false,
+                            "lengthMin": null,
+                            "lengthMax": null
+                          },
+                          {
+                            "name": "现金净流入量（元）",
+                            "order": 2147483647,
+                            "type": "String",
+                            "keyName": "netInflow",
+                            "defaultValue": "",
+                            "required": false,
+                            "lengthMin": null,
+                            "lengthMax": null
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "name": "现金流量表起始时间",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "startTime",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "现金流量表结束时间",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "endTime",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "年经营性现金流入（元）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "yearlyInflow",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "现金流分析",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "analyse",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "其他经营项目分析",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "analyseOther",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "损益信息",
+                      "order": 2147483647,
+                      "type": "Object",
+                      "keyName": "profitLossInfo",
+                      "defaultValue": "",
+                      "required": false,
+                      "paramList": [
+                        {
+                          "name": "种植总净收入（元）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "plantNetIncome",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "养殖总净收入（元）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "breedNetIncome",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "非种养殖经营总净收入（元）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "otherNetIncome",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "贷款期间内借款人及配偶稳定工资收入（元）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "stableWageIncome",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "贷款期间内家庭生活支出（元）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "householdLivingExpenses",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "贷款期间内应偿还的其他贷款本金（元）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "otherLoanPrincipal",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "净收入（元）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "netIncome",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "备注说明",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "worksRemarks",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        }
+                      ]
+                    },
+                    {
+                      "name": "经营资产",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "operatingAssetsList",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": "Object",
+                        "paramList": [
+                          {
+                            "name": "经营资产类型:1存活 2设备 3原材料 4应收款 5预付款 6固定资产投入 7现金及现金等价物 8其他",
+                            "order": 2147483647,
+                            "type": "String",
+                            "keyName": "assetType",
+                            "defaultValue": "",
+                            "required": false,
+                            "lengthMin": null,
+                            "lengthMax": null
+                          },
+                          {
+                            "name": "经营资产类型：8其他描述",
+                            "order": 2147483647,
+                            "type": "String",
+                            "keyName": "assetDesc",
+                            "defaultValue": "",
+                            "required": false,
+                            "lengthMin": null,
+                            "lengthMax": null
+                          },
+                          {
+                            "name": "经营资产市场价格（元）",
+                            "order": 2147483647,
+                            "type": "String",
+                            "keyName": "marketPrice",
+                            "defaultValue": "",
+                            "required": false,
+                            "lengthMin": null,
+                            "lengthMax": null
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "name": "家庭资产",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "householdAssetsList",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": "Object",
+                        "paramList": [
+                          {
+                            "name": "家庭资产类型: 1房屋 2车辆 3其他",
+                            "order": 2147483647,
+                            "type": "String",
+                            "keyName": "assetType",
+                            "defaultValue": "",
+                            "required": false,
+                            "lengthMin": null,
+                            "lengthMax": null
+                          },
+                          {
+                            "name": "对外负债类型：3其他描述",
+                            "order": 2147483647,
+                            "type": "String",
+                            "keyName": "assetDesc",
+                            "defaultValue": "",
+                            "required": false,
+                            "lengthMin": null,
+                            "lengthMax": null
+                          },
+                          {
+                            "name": "家庭资产市场价格（元）",
+                            "order": 2147483647,
+                            "type": "String",
+                            "keyName": "marketPrice",
+                            "defaultValue": "",
+                            "required": false,
+                            "lengthMin": null,
+                            "lengthMax": null
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "name": "对外负债",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "externalLiabilitiesList",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": "Object",
+                        "paramList": [
+                          {
+                            "name": "对外负债类型：1贷款 2信用卡 3对外担保 4其他",
+                            "order": 2147483647,
+                            "type": "String",
+                            "keyName": "sheetType",
+                            "defaultValue": "",
+                            "required": false,
+                            "lengthMin": null,
+                            "lengthMax": null
+                          },
+                          {
+                            "name": "对外负债类型：4其他描述",
+                            "order": 2147483647,
+                            "type": "String",
+                            "keyName": "sheetDesc",
+                            "defaultValue": "",
+                            "required": false,
+                            "lengthMin": null,
+                            "lengthMax": null
+                          },
+                          {
+                            "name": "贷款总额（元）",
+                            "order": 2147483647,
+                            "type": "String",
+                            "keyName": "totalLoan",
+                            "defaultValue": "",
+                            "required": false,
+                            "lengthMin": null,
+                            "lengthMax": null
+                          },
+                          {
+                            "name": "其中未来一年应偿还其他贷款本金（元）",
+                            "order": 2147483647,
+                            "type": "String",
+                            "keyName": "otherLoan",
+                            "defaultValue": "",
+                            "required": false,
+                            "lengthMin": null,
+                            "lengthMax": null
+                          },
+                          {
+                            "name": "近6个月使用额度（元）",
+                            "order": 2147483647,
+                            "type": "String",
+                            "keyName": "limit",
+                            "defaultValue": "",
+                            "required": false,
+                            "lengthMin": null,
+                            "lengthMax": null
+                          },
+                          {
+                            "name": "金额（元）",
+                            "order": 2147483647,
+                            "type": "String",
+                            "keyName": "money",
+                            "defaultValue": "",
+                            "required": false,
+                            "lengthMin": null,
+                            "lengthMax": null
+                          },
+                          {
+                            "name": "担保总额（元）",
+                            "order": 2147483647,
+                            "type": "String",
+                            "keyName": "loanAmount",
+                            "defaultValue": "",
+                            "required": false,
+                            "lengthMin": null,
+                            "lengthMax": null
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "name": "备注说明",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "worksRemarks",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    }
+                  ]
+                },
+                {
+                  "name": "合作方调查结论",
+                  "order": 2147483647,
+                  "type": "Object",
+                  "keyName": "conclusionBo",
+                  "defaultValue": "",
+                  "required": false,
+                  "paramList": [
+                    {
+                      "name": "基于种养殖生产经营周期的测算（元）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "productionCycleCalculate",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "基于种养殖生产经营周期的测算（元）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "cashFlowCalculate",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "基于营业收入的测算（元）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "operatingIncomeCalculate",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "调整系数",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "coefficientAdjustment",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "调整原因",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "reasonAdjustment",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "最终测算结果（元）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "resultCalculate",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "授信额度（元）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "limitCredit",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "额度使用期（月）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "limitTerm",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "单笔贷款最长期限（月）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "maxTermSingle",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "利率定价方式： 1浮动利率",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "interestRateType",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "利率加点幅度（BP）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "interestRateIncrement",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "额度内还款方式 0100-等额本金 0200-等额本息 0300-阶段性等额本金 0400-阶段性等额本息1100-按周期结息到期还本 1200-一次性还本付息 1300-按周期结息任意还本",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "paymentMethod",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "额度内结息周期:1月 2自然季 3自然半年 4自然年 5单周 6双周 7半月 8半季 9对半年 0对年 12其他",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "interestCycle",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "额度内宽限期",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "gracePeriod",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "风险评估及注意事项",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "assessmentPrecautions",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "担保类型：1法人保证",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "guaranteeType",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "法人保证人：1农担",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "corporateGuarantor",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    }
+                  ]
+                },
+                {
+                  "name": "合作方上传资料",
+                  "order": 2147483647,
+                  "type": "Object",
+                  "keyName": "uploadDataBo",
+                  "defaultValue": "",
+                  "required": false,
+                  "paramList": [
+                    {
+                      "name": "模板名称",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "ndTemplateList",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": "Object",
+                        "paramList": [
+                          {
+                            "name": "项目附件模板ID",
+                            "order": 2147483647,
+                            "type": "String",
+                            "keyName": "templateId",
+                            "defaultValue": "",
+                            "required": false,
+                            "lengthMin": null,
+                            "lengthMax": null
+                          },
+                          {
+                            "name": "项目附件模板类型",
+                            "order": 2147483647,
+                            "type": "String",
+                            "keyName": "templateType",
+                            "defaultValue": "",
+                            "required": false,
+                            "lengthMin": null,
+                            "lengthMax": null
+                          },
+                          {
+                            "name": "项目附件模板名称",
+                            "order": 2147483647,
+                            "type": "String",
+                            "keyName": "templateName",
+                            "defaultValue": "",
+                            "required": false,
+                            "lengthMin": null,
+                            "lengthMax": null
+                          },
+                          {
+                            "name": "项目附件是否必填",
+                            "order": 2147483647,
+                            "type": "String",
+                            "keyName": "needSubmit",
+                            "defaultValue": "1",
+                            "required": false,
+                            "lengthMin": null,
+                            "lengthMax": null
+                          },
+                          {
+                            "name": "项目附件排序",
+                            "order": 2147483647,
+                            "type": "String",
+                            "keyName": "sortIndex",
+                            "defaultValue": "",
+                            "required": false,
+                            "lengthMin": null,
+                            "lengthMax": null
+                          },
+                          {
+                            "name": "项目附件名称",
+                            "order": 2147483647,
+                            "type": "String",
+                            "keyName": "fileName",
+                            "defaultValue": "",
+                            "required": false,
+                            "lengthMin": null,
+                            "lengthMax": null
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "name": "身份证",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "idCardUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": "String",
+                        "paramList": null
+                      }
+                    },
+                    {
+                      "name": "借款人户口本",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "houseHoldBookUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": "String",
+                        "paramList": null
+                      }
+                    },
+                    {
+                      "name": "结婚证明材料",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "marriageUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": null,
+                        "paramList": null
+                      }
+                    },
+                    {
+                      "name": "经营场地材料",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "areaUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": null,
+                        "paramList": null
+                      }
+                    },
+                    {
+                      "name": "借款人申请表",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "borrowerUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": null,
+                        "paramList": null
+                      }
+                    },
+                    {
+                      "name": "农担贷款保证担保业务申请表",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "loanTableUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": null,
+                        "paramList": null
+                      }
+                    },
+                    {
+                      "name": "最近一期租金交付证明",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "recentIssueUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": null,
+                        "paramList": null
+                      }
+                    },
+                    {
+                      "name": "近六个月借款人经营账户银行流水",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "sixMonthBankLossesUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": null,
+                        "paramList": null
+                      }
+                    },
+                    {
+                      "name": "近六个月交易往来或者往来记账的凭证",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "sixMonthTransactionPastUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": null,
+                        "paramList": null
+                      }
+                    },
+                    {
+                      "name": "资产权属材料",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "assetMaterialsUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": null,
+                        "paramList": null
+                      }
+                    },
+                    {
+                      "name": "征信报告",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "creditReportUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": null,
+                        "paramList": null
+                      }
+                    },
+                    {
+                      "name": "被执行信息",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "executedInfoUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": null,
+                        "paramList": null
+                      }
+                    },
+                    {
+                      "name": "反担保人收入证明及银行流水",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "counterGuarantorBankLossesUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": null,
+                        "paramList": null
+                      }
+                    },
+                    {
+                      "name": "尽调照片",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "dueDiligencePicUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": null,
+                        "paramList": null
+                      }
+                    },
+                    {
+                      "name": "合作项目清单",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "cooperationTableUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": null,
+                        "paramList": null
+                      }
+                    },
+                    {
+                      "name": "经营主体材料",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "operatingMaterialUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": null,
+                        "paramList": null
+                      }
+                    },
+                    {
+                      "name": "其他有关材料",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "otherMaterialsUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": null,
+                        "paramList": null
+                      }
+                    },
+                    {
+                      "name": "审查审批表",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "reviewTableUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": null,
+                        "paramList": null
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "商贷--合作方详细信息",
+              "order": 2147483647,
+              "type": "Object",
+              "keyName": "commercialPartnerDetailedBo",
+              "defaultValue": "",
+              "required": false,
+              "paramList": [
+                {
+                  "name": "合作方基础信息",
+                  "order": 2147483647,
+                  "type": "Object",
+                  "keyName": "baseBo",
+                  "defaultValue": "",
+                  "required": false,
+                  "paramList": [
+                    {
+                      "name": "业务模式（项目类型）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "bizType",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "合作方项目编号",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "partnerNo",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "申请金额（万元）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "limitAmount",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "申请期限（月）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "loanLength",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "贷款用途 733-经营 734-消费",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "useType",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "客户经理姓名（主调查人）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "userName",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "辅调查人",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "auxiliaryInvestigator",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "调查日期",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "investigateDate",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "客户姓名",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "cusName",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "证件号码",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "certificateCode",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "年龄",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "age",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "性别",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "sex",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "客户手机号码",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "cusMobile",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "户籍",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "domicile",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "常驻地址、居住地址",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "address",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "教育程度（客户学历）1：未知2；小学3:初中4：高中5：专科6：本科7：硕士8：博士",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "educate",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "家庭劳动力人数",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "laborForce",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "婚姻状况: 10未婚 20已婚 30离异 40丧偶",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "marrgSituCode",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "配偶姓名",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "spouseName",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "配偶身份证号码",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "spouseCertificateCode",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": 18,
+                      "lengthMax": 18
+                    },
+                    {
+                      "name": "配偶移动电话",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "spouseMobile",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "配偶户籍",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "mateDomicile",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "配偶工作单位",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "mateWorkUnit",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "配偶职务",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "mateDuties",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "家庭情况介绍",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "familySituation",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    }
+                  ]
+                },
+                {
+                  "name": "合作方经营信息",
+                  "order": 2147483647,
+                  "type": "Object",
+                  "keyName": "manageBo",
+                  "defaultValue": "",
+                  "required": false,
+                  "paramList": [
+                    {
+                      "name": "经营者类型：1个体 2合伙",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "type",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "经营者类型：1个体",
+                      "order": 2147483647,
+                      "type": "Object",
+                      "keyName": "individualityInfo",
+                      "defaultValue": "",
+                      "required": false,
+                      "paramList": [
+                        {
+                          "name": "经营实体名称",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "name",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "是否有营业执照:1是；0否",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "isCharter",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "所属行业",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "industry",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "经营范围",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "scope",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "经营者姓名",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "operatorsName",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "经营地址",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "address",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "经营年限（年）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "life",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "雇员人数",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "employees",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "经营场地性质:1自有 2租凭",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "landStatus",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "租金交付方式:1目前拖欠租金 2一季一交 3一年一交 4一次性交付1-3年租金 5一次性交付3-5年租金 6一次性交付5-10年租金 7一次性交付10年以上租金",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "deliveryType",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "借款者与经营者关系",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "relation",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "有效股权/份额比例（%）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "equity",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        }
+                      ]
+                    },
+                    {
+                      "name": "经营者类型：2合伙",
+                      "order": 2147483647,
+                      "type": "Object",
+                      "keyName": "partnershipInfo",
+                      "defaultValue": "",
+                      "required": false,
+                      "paramList": [
+                        {
+                          "name": "企业名称",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "name",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "是否有营业执照:1是；0否",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "isCharter",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "经营范围",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "scope",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "法定代表人",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "legalRepresentative",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "注册地",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "domicile",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "经营地址",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "address",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "成立日期",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "registerDate",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "经营年限（年）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "life",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "注册资金（元）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "registeredCapital",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "经营面积（平方米）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "operatingArea",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "经营场地性质:1自有 2租凭",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "landStatus",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "租金交付方式:1目前拖欠租金 2一季一交 3一年一交 4一次性交付1-3年租金 5一次性交付3-5年租金 6一次性交付5-10年租金 7一次性交付10年以上租金",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "deliveryType",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "结构类型:1夫妻型 2父子型 3兄弟型 4一人型 5朋友型 6其他",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "relationType",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "结构类型为其他 描述",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "relationOtherDesc",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "合伙人/股东信息",
+                          "order": 2147483647,
+                          "type": "Array",
+                          "keyName": "shareholderInfos",
+                          "defaultValue": "",
+                          "required": false,
+                          "items": {
+                            "type": "Object",
+                            "paramList": [
+                              {
+                                "name": "姓名",
+                                "order": 2147483647,
+                                "type": "String",
+                                "keyName": "name",
+                                "defaultValue": "",
+                                "required": false,
+                                "lengthMin": null,
+                                "lengthMax": null
+                              },
+                              {
+                                "name": "持股比例（%）",
+                                "order": 2147483647,
+                                "type": "String",
+                                "keyName": "ratio",
+                                "defaultValue": "",
+                                "required": false,
+                                "lengthMin": null,
+                                "lengthMax": null
+                              },
+                              {
+                                "name": "与实际控制人关系",
+                                "order": 2147483647,
+                                "type": "String",
+                                "keyName": "relation",
+                                "defaultValue": "",
+                                "required": false,
+                                "lengthMin": null,
+                                "lengthMax": null
+                              },
+                              {
+                                "name": "备注",
+                                "order": 2147483647,
+                                "type": "String",
+                                "keyName": "remark",
+                                "defaultValue": "",
+                                "required": false,
+                                "lengthMin": null,
+                                "lengthMax": null
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "name": "借款人是否实际控制人:1是；0否",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "isControl",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "实际控制人姓名",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "controlName",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "年龄",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "controlAge",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "学历 1：未知2；小学3:初中4：高中5：专科6：本科7：硕士8：博士",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "controlEducate",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "从事本行业年限（年",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "controlWorkYears",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "联系电话",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "controlPhone",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "婚姻状况",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "marryStatus",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "配偶姓名",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "mateName",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "配偶职业",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "mateOccupation",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "工作履历",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "workExperience",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "借款人是否总经理:1是；0否",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "isManager",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "总经理姓名",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "managerName",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "现职时间（年）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "managerWorkYears",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "与企业实际控制人关系",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "managerRelation",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "从事本行业年限（年）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "managerEngagedYears",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "联系电话",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "managerPhone",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "备注",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "managerDesc",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "借款人是否财务负责人:1是；0否",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "isFinance",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "财务负责人姓名",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "financeName",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "现职时间（年）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "financeWorkYears",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "与企业实际控制人关系",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "financeRelation",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "从事本行业年限（年）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "financeEngagedYears",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "联系电话",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "financePhone",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "备注",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "financeDesc",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        }
+                      ]
+                    },
+                    {
+                      "name": "经营通用信息",
+                      "order": 2147483647,
+                      "type": "Object",
+                      "keyName": "operatingGeneralInfo",
+                      "defaultValue": "",
+                      "required": false,
+                      "paramList": [
+                        {
+                          "name": "经营历史",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "history",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "资产总额(元)",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "totalAssets",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "负债总额(元)",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "debtAssets",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "净资产(元)",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "netAssets",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "年营业收入(元)",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "annualIncome",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "年营业利润(元)",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "annualProfit",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "经营场地性质(平方米)",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "areaM",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "是否存在淡旺季（0-否1-是）",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "seasonStatus",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "旺季月数",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "peakMonth",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "旺季月现金流入(元)",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "peakIncome",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "旺季月现金流出(元)",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "peakFlowOut",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "平季月数",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "flatMonth",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "平季月现金流入(元)",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "flatIncome",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "平季月现金流出",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "flatFlowOut",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "淡季月数(元)",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "lowMonth",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "淡季月现金流入(元)",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "lowIncome",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "淡季月现金流出(元)",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "lowFlowOut",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "平均净现金流入(元)",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "avgIncome",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "经营情况详细说明",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "situationStatement",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        },
+                        {
+                          "name": "借款人、配偶、经营实体主要资产明细",
+                          "order": 2147483647,
+                          "type": "Array",
+                          "keyName": "assetsInfoList",
+                          "defaultValue": "",
+                          "required": false,
+                          "items": {
+                            "type": "Object",
+                            "paramList": [
+                              {
+                                "name": "资产",
+                                "order": 2147483647,
+                                "type": "String",
+                                "keyName": "assets",
+                                "defaultValue": "",
+                                "required": false,
+                                "lengthMin": null,
+                                "lengthMax": null
+                              },
+                              {
+                                "name": "信息",
+                                "order": 2147483647,
+                                "type": "String",
+                                "keyName": "info",
+                                "defaultValue": "",
+                                "required": false,
+                                "lengthMin": null,
+                                "lengthMax": null
+                              },
+                              {
+                                "name": "我行认定价值（元）",
+                                "order": 2147483647,
+                                "type": "String",
+                                "keyName": "value",
+                                "defaultValue": "",
+                                "required": false,
+                                "lengthMin": null,
+                                "lengthMax": null
+                              },
+                              {
+                                "name": "权属证明或说明",
+                                "order": 2147483647,
+                                "type": "String",
+                                "keyName": "prove",
+                                "defaultValue": "",
+                                "required": false,
+                                "lengthMin": null,
+                                "lengthMax": null
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "name": "其他经营实体情况",
+                          "order": 2147483647,
+                          "type": "String",
+                          "keyName": "otherStatement",
+                          "defaultValue": "",
+                          "required": false,
+                          "lengthMin": null,
+                          "lengthMax": null
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "合作方调查结论",
+                  "order": 2147483647,
+                  "type": "Object",
+                  "keyName": "conclusionBo",
+                  "defaultValue": "",
+                  "required": false,
+                  "paramList": [
+                    {
+                      "name": "信用报告等级",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "reportLevel",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "借款人信用状况说明",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "borrowerCreditStatement",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "其他相关人信用状况说明",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "otherCreditStatement",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "贷款投向经营实体营业收入（元）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "loanIncome",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "贷款投向经营实体行业调整系数（%）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "loanCoefficient",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "有效股权/份额比例（%）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "effectiveProportion",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "合计（元）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "sum",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "其他实体信息",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "otherEntityList",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": "Object",
+                        "paramList": [
+                          {
+                            "name": "其他实体名称",
+                            "order": 2147483647,
+                            "type": "String",
+                            "keyName": "otherName",
+                            "defaultValue": "",
+                            "required": false,
+                            "lengthMin": null,
+                            "lengthMax": null
+                          },
+                          {
+                            "name": "其他实体收入（元）",
+                            "order": 2147483647,
+                            "type": "String",
+                            "keyName": "otherEntityIncome",
+                            "defaultValue": "",
+                            "required": false,
+                            "lengthMin": null,
+                            "lengthMax": null
+                          },
+                          {
+                            "name": "其他实体有效股权/份额比例（%）",
+                            "order": 2147483647,
+                            "type": "String",
+                            "keyName": "otherEntityEffectiveProportion",
+                            "defaultValue": "",
+                            "required": false,
+                            "lengthMin": null,
+                            "lengthMax": null
+                          },
+                          {
+                            "name": "其他实体收入小计（元）",
+                            "order": 2147483647,
+                            "type": "String",
+                            "keyName": "otherEntityIncomeSubtotal",
+                            "defaultValue": "",
+                            "required": false,
+                            "lengthMin": null,
+                            "lengthMax": null
+                          }
+                        ]
+                      }
+                    },
+                    {
+                      "name": "其他实体合计（元）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "otherEntitySum",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "其他收入（元）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "otherIncome",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "基于营业收入的测算 调整系数（%）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "coefficient",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "基于营业收入的测算 测算结果（元）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "estimateResult",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "基于营业收入的测算 备注",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "operateRemark",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "年度营业性现金流入合计（元）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "yearIncome",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "一年内客户应偿还的其他贷款本金（元）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "oneYearCapital",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "基于现金流的测算 调整系数（%）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "cashCoefficient",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "基于现金流的测算 测算结果（元）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "cashEstimateResult",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "基于现金流的测算 备注",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "cashRemark",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "自定义测算方式",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "customizeMethod",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "自定义测算结果（元）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "customizeEstimateResult",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "最终测算结果（元）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "finalEstimateResult",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "授信额度（元）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "limitCredit",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "额度使用期（月）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "limitTerm",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "单笔贷款最长期限（月）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "maxTermSingle",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "利率定价方式： 1浮动利率",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "interestRateType",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "利率加点幅度（BP）",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "interestRateIncrement",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "额度内还款方式 0100-等额本金 0200-等额本息 0300-阶段性等额本金 0400-阶段性等额本息1100-按周期结息到期还本 1200-一次性还本付息 1300-按周期结息任意还本",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "paymentMethod",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "额度内结息周期:1月 2自然季 3自然半年 4自然年 5单周 6双周 7半月 8半季 9对半年 0对年 12其他",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "interestCycle",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "额度内宽限期",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "gracePeriod",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "风险评估及注意事项",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "assessmentPrecautions",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "担保类型：1法人保证",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "guaranteeType",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    },
+                    {
+                      "name": "法人保证人：1农担",
+                      "order": 2147483647,
+                      "type": "String",
+                      "keyName": "corporateGuarantor",
+                      "defaultValue": "",
+                      "required": false,
+                      "lengthMin": null,
+                      "lengthMax": null
+                    }
+                  ]
+                },
+                {
+                  "name": "合作方上传资料",
+                  "order": 2147483647,
+                  "type": "Object",
+                  "keyName": "uploadDataBo",
+                  "defaultValue": "",
+                  "required": false,
+                  "paramList": [
+                    {
+                      "name": "模板名称",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "ndTemplateList",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": null,
+                        "paramList": null
+                      }
+                    },
+                    {
+                      "name": "身份证",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "idCardUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": null,
+                        "paramList": null
+                      }
+                    },
+                    {
+                      "name": "借款人户口本",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "houseHoldBookUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": null,
+                        "paramList": null
+                      }
+                    },
+                    {
+                      "name": "结婚证明材料",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "marriageUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": null,
+                        "paramList": null
+                      }
+                    },
+                    {
+                      "name": "经营场地材料",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "areaUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": null,
+                        "paramList": null
+                      }
+                    },
+                    {
+                      "name": "借款人申请表",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "borrowerUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": null,
+                        "paramList": null
+                      }
+                    },
+                    {
+                      "name": "农担贷款保证担保业务申请表",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "loanTableUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": null,
+                        "paramList": null
+                      }
+                    },
+                    {
+                      "name": "最近一期租金交付证明",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "recentIssueUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": null,
+                        "paramList": null
+                      }
+                    },
+                    {
+                      "name": "近六个月借款人经营账户银行流水",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "sixMonthBankLossesUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": null,
+                        "paramList": null
+                      }
+                    },
+                    {
+                      "name": "近六个月交易往来或者往来记账的凭证",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "sixMonthTransactionPastUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": null,
+                        "paramList": null
+                      }
+                    },
+                    {
+                      "name": "资产权属材料",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "assetMaterialsUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": null,
+                        "paramList": null
+                      }
+                    },
+                    {
+                      "name": "征信报告",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "creditReportUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": null,
+                        "paramList": null
+                      }
+                    },
+                    {
+                      "name": "被执行信息",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "executedInfoUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": null,
+                        "paramList": null
+                      }
+                    },
+                    {
+                      "name": "反担保人收入证明及银行流水",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "counterGuarantorBankLossesUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": null,
+                        "paramList": null
+                      }
+                    },
+                    {
+                      "name": "尽调照片",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "dueDiligencePicUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": null,
+                        "paramList": null
+                      }
+                    },
+                    {
+                      "name": "合作项目清单",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "cooperationTableUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": null,
+                        "paramList": null
+                      }
+                    },
+                    {
+                      "name": "经营主体材料",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "operatingMaterialUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": null,
+                        "paramList": null
+                      }
+                    },
+                    {
+                      "name": "其他有关材料",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "otherMaterialsUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": null,
+                        "paramList": null
+                      }
+                    },
+                    {
+                      "name": "审查审批表",
+                      "order": 2147483647,
+                      "type": "Array",
+                      "keyName": "reviewTableUrl",
+                      "defaultValue": "",
+                      "required": false,
+                      "items": {
+                        "type": null,
+                        "paramList": null
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "拒贷原因,限30字以内",
+              "order": 2147483647,
+              "type": "String",
+              "keyName": "reason",
+              "defaultValue": "",
+              "required": false,
+              "lengthMin": null,
+              "lengthMax": null
+            },
+            {
+              "name": "按钮类型0展示调查结果 1提交 2不展示",
+              "order": 2147483647,
+              "type": "Integer",
+              "keyName": "btnType",
+              "defaultValue": "",
+              "required": false,
+              "max": null,
+              "min": null
+            },
+            {
+              "name": "尽调报告主键id",
+              "order": 2147483647,
+              "type": "String",
+              "keyName": "id",
+              "defaultValue": "",
+              "required": true,
+              "lengthMin": null,
+              "lengthMax": null
+            },
+            {
+              "name": "业务类型：1农贷通；2商贷通",
+              "order": 2147483647,
+              "type": "Integer",
+              "keyName": "businessType",
+              "defaultValue": "",
+              "required": true,
+              "max": null,
+              "min": null
+            },
+            {
+              "name": "步骤页：0全部；1基础信息；2经营信息；3调查结果",
+              "order": 2147483647,
+              "type": "Integer",
+              "keyName": "step",
+              "defaultValue": "",
+              "required": false,
+              "max": null,
+              "min": null
+            },
+            {
+              "name": "调查状态：1-通过 2-拒绝",
+              "order": 2147483647,
+              "type": "Integer",
+              "keyName": "status",
+              "defaultValue": "",
+              "required": false,
+              "max": 10,
+              "min": 1
+            },
+            {
+              "name": "合作方报告url",
+              "order": 2147483647,
+              "type": "String",
+              "keyName": "partnerReportUrl",
+              "defaultValue": "",
+              "required": false,
+              "lengthMin": 10,
+              "lengthMax": 10
+            }
+          ],
+          "responseList": [
+            {
+              "name": "业务响应码",
+              "order": 1,
+              "type": "Integer",
+              "keyName": "code",
+              "defaultValue": "",
+              "required": false,
+              "max": 20,
+              "min": 20
+            },
+            {
+              "name": "业务响应信息",
+              "order": 2,
+              "type": "String",
+              "keyName": "message",
+              "defaultValue": "",
+              "required": false,
+              "lengthMin": null,
+              "lengthMax": null
+            },
+            {
+              "name": "业务响应数据",
+              "order": 3,
+              "type": "String",
+              "keyName": "data",
+              "defaultValue": "",
+              "required": false,
+              "lengthMin": null,
+              "lengthMax": null
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "port": 8092,
+  "enviroment": {
+    "header": {
+      "channel": "{{channel}}",
+      "token": "{{token}}"
+    },
+    "parameter": {}
+  },
+  "contextPath": "/user",
+  "active": "开发环境",
+  "url": "192.168.11.195"
+}
